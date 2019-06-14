@@ -1,4 +1,127 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ESCO S.A.</title>
+        
+        <meta name="description" content="ESCO S.A." /> 
+        <meta name="keywords" content="ESCO, tecnogolía, productos, planes, capitalización, ahorro, vehículos, 0km, valor nominal" />
+        <meta name="dc.language" CONTENT="ES">
+        <meta name="dc.source" CONTENT="http://www.escotecno.com.ar/">
+        <meta name="dc.title" CONTENT="ESCO COMERCIAL">
+        <meta name="dc.keywords" CONTENT="ESCO, tecnogolía, productos, planes, capitalización, ahorro, vehículos, 0km, valor nominal">
+        <meta name="dc.subject" CONTENT="ESCO S.A.">
+        <meta name="dc.description" CONTENT="ESCO S.A.">
+        <meta name="robots" content="all"/>
+        <meta http-equiv="imagetoolbar" CONTENT="no">
+        
+        <meta name="geo.region" content="AR-E" />
+        <meta name="geo.placename" content="Paran&aacute;" />
+        <meta name="geo.position" content="31.740543;-60.521775" />
+        <meta name="ICBM" content="-31.740543, -60.521775" />
+        
+        <!-- Bootstrap -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        
+        <!-- Material Design Bootstrap -->
+        <link href="../css/mdb.min.css" rel="stylesheet">
+        
+        <!-- styles -->
+        <!--ink href="css/main.css" rel="stylesheet" type="text/css" -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <header>
+            <img class="logo-home" src="../img/logo-esco-adjudicado.svg" alt="ESCO S.A.">
+            
+            <nav id="nav" class="navbar navbar-dark navbar-expand-md bg-faded">
+                <a class="navbar-brand" href="#"><img src="img/logo-esco-01.svg" alt="ESCO S.A."></a>
+                
+                <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+                    <h1>EXCLUSIVO PARA AGENCIAS</h1>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="container">
+        </div>
+        
+        <footer>
+            <div class="container-fluid legals">
+                <div class="row">
+                    <div class="col-0 col-md-1"></div>
+                    
+                    <div class="col-10 col-md-5">
+                        <p><span class="icon-location-icon"></span><a href="https://goo.gl/maps/vhrHF1sN1Q32" target="_blank">Gualeguaychú 763.</a><br><h6>Paraná, Entre Ríos, Argentina</h6></p>
+                        <p><span class="icon-phone-icon"></span> (0343) 4230398</p>
+                        <br>
+					    <p><span class="icon-icon-whatsapp"></span> 3434566284</p>
+                        <br>
+                    </div>
+                
+                    <div class="col-10 col-md-5">
+                        <a href="https://www.esco.com.ar" target="_blank"><span class="icon-web-icon"></span> www.esco.com.ar</a>
+					    <br>
+					    <a href="https://www.facebook.com/ESCOSAoficial/" target="_blank"><span class="icon-face-icon-footer"></span> ESCO S.A. Oficial</a>
+					    <br>
+					    <a href="https://www.instagram.com/escosaoficial/" target="_blank"><span class="icon-instagram-icon-footer"></span> escosaoficial</a>
+					    <br>
+					    <a href="https://www.youtube.com/user/escocapyahorro" target="_blank"><span class="icon-youtube-icon-footer"></span> ESCO S.A.</a>
+                    </div>
+                
+                    <div class="col-0 col-md-1"></div>
+			    </div>
+		    </div>
+	    </footer>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr-custom.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+	
+	<!-- Script fonts -->
+	<script src="js/fonts.js"></script>
+	  
+	<!-- Script stick navbar -->
+	<script>
+		$(window).scroll(function(){
+			if ($(window).scrollTop() >= 520) {
+				$('nav').addClass('sticky');
+			}
+			else {
+				$('nav').removeClass('sticky');
+			}
+		});
+	</script>
+	
+	<!-- Scritp Form validate -->	  
+	<script>
+	(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+		// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		var forms = document.getElementsByClassName('needs-validation');
+		// Loop over them and prevent submission
+		var validation = Array.prototype.filter.call(forms, function(form) {
+		  form.addEventListener('submit', function(event) {
+			if (form.checkValidity() === false) {
+			  event.preventDefault();
+			  event.stopPropagation();
+			}
+			form.classList.add('was-validated');
+		  }, false);
+		});
+	  }, false);
+	})();
+	</script>
+  </body>
+</html>
